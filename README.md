@@ -8,7 +8,8 @@ The process for distributing Windows versions of Scalar, microsoft/git, Git Cred
 ## Current state
 As depicted in the diagram below (and stated in the [Problem Statement](#problem-statement) above), the current Git scaling product distribution story for Office involves a lot of manual coordination. Additionally, it involves a special Azure release, which is separate from the GitHub releases that are also being produced for each product (excluding the Git Telemetry Service).
 
-<img src="img/current.png" />
+![](img/current.PNG)
+
 ## Proposed future state
 __Note:__ The above diagram is _Office-specific_ - it focuses on the GitHub Git Service team's process for distributing Git scaling products to Office. However, the below diagram is _Windows-specific_ - it should be considered the north star for anyone working on a Windows machine to consume Git scaling tooling.
 
@@ -16,7 +17,7 @@ The below shows where we'd like to land upon completing this project. As mention
 
 __Note__: Because the Git Telemetry Service lives in Azure DevOps, it will not be deployed using the winget manifest strategy described above. Rather, it will be deployed as a standalone installer users can download and run.
 
-<img src="img/future.png" />
+![](img/future.PNG)
 
 ## Proposed workflow for Scalar, microsoft/git, and VFS for Git
 
@@ -28,7 +29,7 @@ Each repo will have a new YAML file at `microsoft/<repo>/.github/workflows/relea
 2. Compute asset hash (using the existing `mjcheetham/asset-hash` action)
 3. Update the tool's winget manifest (using the existing `mjcheetham-update-winget` action)
 
-<img src="img/new_workflow.png" />
+![](img/new_workflow.PNG)
 
 # Project time estimate and breakdown
 ## _Total projected time for project - <span style="color:green">4 weeks<span>_
