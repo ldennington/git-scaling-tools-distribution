@@ -32,7 +32,7 @@ Each repo will have a new YAML file at `microsoft/<repo>/.github/workflows/relea
 ![](img/new_workflow.PNG)
 
 # Project time estimate and breakdown
-## _Total projected time for project - <span style="color:green">4 weeks<span>_
+### <mark>_Total projected time for project - 4 weeks_</mark>
 
 | General                                                                                                      |        |
 |--------------------------------------------------------------------------------------------------------------|--------|
